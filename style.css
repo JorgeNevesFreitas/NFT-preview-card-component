@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+/*reset*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+/*configurações basicas e gerais do site*/
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    max-width: 1440px;
+       
+}
+
+.card {
+    max-width: 378px;
+    margin: 150px auto;
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    display: grid;
+    grid-template-rows: 2fr, 1fr, 1fr;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+.card__image_top {
+    position: relative; /* atribuição de posição comparativamente à outra imagem */
+}
+.card__main-image {
+    max-width: 100%;
+    display: inherit; /* ajusta o tamanho da imagem ao container */
+    border-radius: 15px;
+    padding: px;
+   
+}
+
+.card_image_overlay {
+    position: absolute;  /* atribuição de posição relativamente à imagem anterior */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.card_image_overlay img {
+   position: absolute; /* atribuição de posição relativamente à imagem anterior */
+   top: 43%; /* poscionamento no container */
+   left: 43%;
+   
+   
+    }
+
+.card__NFT-name {
+    color: hsl(0, 0%, 100%);
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 22px;
+   
+}
+
+
+.card__NFT-description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 25px;
+        
+}
+
+.card__sell-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    
+}
+
+.card__eth {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;  
+     
+}
+
+.card_days-left {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+   
+    
+    
+}
+
+.card__sell-info img {
+    margin-right: 8px;
+    max-height: 18px;
+    
+}
+
+.card__description {
+    border-bottom: 1px;
+    border-bottom-color:hsl(215, 32%, 27%) ;
+    border-bottom-style: solid;
+    margin-bottom: 20px;
+}
+
+.card-credits {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-credits img {
+    max-height: 35px;
+    border: 1px white solid;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card__auhtor-credits {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+ a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    
+}
+
+.card__image_top:hover .card_image_overlay{
+    cursor: pointer;
+    display: block;
+
+}
+
+.card__NFT-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    
+
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+
+}
+
+    
+
+.attribution {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: hsl(215, 51%, 70%);
+       
+    
+}
+
+
+
+
+
+
+
