@@ -173,7 +173,29 @@ a:hover {
 }
 
 
+@media only screen and (max-width: 375px) {
+    .card {
+        margin: 85px 20px;
+    }
 
+    .card__NFT-name {
+          
+        font-size: 18px;
+
+    }
+
+    .card__NFT-description {
+        font-size: 15px;
+    }
+
+    .card-credit {
+        font-size: 16px;
+    }
+
+    .card__auhtor-credits {
+        font-size: 16px;
+    }
+}
 
 
 
